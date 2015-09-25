@@ -51,6 +51,6 @@ func main() {
 	if e < 0 {
 		return
 	}
-	fmt.Printf("%s\n", string(b[s:s+e]))
+	fmt.Printf("%s\n", b[s:s+e])
 
 }
