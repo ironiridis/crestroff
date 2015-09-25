@@ -36,7 +36,7 @@ func main() {
 	var f bool
 
 	for in := bufio.NewReader(os.Stdin); err == nil; c, err = in.ReadByte() {
-		f = (c >= 0x80 || f)
+		f = (f || c >= 0x80)
 		if f {
 			d.WriteByte(c / 2)
 		}
